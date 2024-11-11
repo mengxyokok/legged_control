@@ -12,15 +12,15 @@
     <xacro:property name="trunk_height" value="0.15"/>
     <xacro:property name="hip_radius" value="0.07"/>
     <xacro:property name="hip_length" value="0.05"/>
-    <!-- <xacro:property name="thigh_shoulder_radius" value="0.044"/>
-    <xacro:property name="thigh_shoulder_length" value="0.08"/> -->
+    <xacro:property name="thigh_shoulder_radius" value="0.044"/>
+    <xacro:property name="thigh_shoulder_length" value="0.08"/>
     <xacro:property name="thigh_width" value="0.0455"/>
     <xacro:property name="thigh_height" value="0.054"/>
-    <!-- <xacro:property name="calf_width" value="0.04"/>
-    <xacro:property name="calf_height" value="0.05"/> -->
+    <xacro:property name="calf_width" value="0.04"/>
+    <xacro:property name="calf_height" value="0.05"/>
     <xacro:property name="foot_radius" value="0.04"/>
-    <!-- <xacro:property name="stick_radius" value="0.01"/>
-    <xacro:property name="stick_length" value="0.2"/> -->
+    <xacro:property name="stick_radius" value="0.01"/>
+    <xacro:property name="stick_length" value="0.2"/>
 
     <!-- kinematic value -->
     <xacro:property name="thigh_offset" value="0.11973"/>
@@ -55,6 +55,9 @@
     <xacro:property name="calf_rotor_offset_y" value="-0.05788"/>
     <xacro:property name="calf_rotor_offset_z" value="0.0"/>
 
+    <xacro:property name="thigh_x_offset" value="0"/>
+    <xacro:property name="thigh_shoulder_y_offset" value="0"/>
+    <xacro:property name="calf_x_offset" value="0.0"/>
 
     <!-- joint limits -->
     <xacro:property name="damping" value="0"/>
