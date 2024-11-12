@@ -160,18 +160,18 @@ initialState
    (11,0) 0.0     ; theta_base_x
 
    ;; Leg Joint Positions: [LF, LH, RF, RH] ;;
-   (12,0) -0.20   ; LF_HAA
-   (13,0)  0.72   ; LF_HFE
-   (14,0) -1.44   ; LF_KFE
-   (15,0) -0.20   ; LH_HAA
-   (16,0)  0.72   ; LH_HFE
-   (17,0) -1.44   ; LH_KFE
-   (18,0)  0.20   ; RF_HAA
-   (19,0)  0.72   ; RF_HFE
-   (20,0) -1.44   ; RF_KFE
-   (21,0)  0.20   ; RH_HAA
-   (22,0)  0.72   ; RH_HFE
-   (23,0) -1.44   ; RH_KFE
+   (0,0)   0.10   ; LF_HAA
+   (1,0)   0.83   ; LF_HFE
+   (2,0)  -1.59   ; LF_KFE
+   (3,0)   0.10   ; LH_HAA
+   (4,0)   0.83   ; LH_HFE
+   (5,0)  -1.59   ; LH_KFE
+   (6,0)  -0.10   ; RF_HAA
+   (7,0)   0.83   ; RF_HFE
+   (8,0)  -1.59   ; RF_KFE
+   (9,0)  -0.10   ; RH_HAA
+   (10,0)  0.83   ; RH_HFE
+   (11,0) -1.59   ; RH_KFE
 }
 
 ; standard state weight matrix
@@ -283,9 +283,9 @@ selfCollision
 ; Whole body control
 torqueLimitsTask
 {
-   (0,0)  33.5     ; HAA
-   (1,0)  33.5     ; HFE
-   (2,0)  33.5     ; KFE
+   (0,0)  360     ; HAA
+   (1,0)  360     ; HFE
+   (2,0)  360     ; KFE
 }
 
 frictionConeTask

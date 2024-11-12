@@ -154,6 +154,7 @@ void LeggedController::updateStateEstimation(const ros::Time& time, const ros::D
   for (size_t i = 0; i < hybridJointHandles_.size(); ++i) {
     jointPos(i) = hybridJointHandles_[i].getPosition();
     jointVel(i) = hybridJointHandles_[i].getVelocity();
+    std::cerr << "\n###   joint " << i << " Pos: " << jointPos(i) << " Vec: " << jointVel(i)<< std::endl;
   }
   for (size_t i = 0; i < contacts.size(); ++i) {
     contactFlag[i] = contactHandles_[i].isContact();
