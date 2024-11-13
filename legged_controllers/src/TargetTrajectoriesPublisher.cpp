@@ -81,6 +81,13 @@ TargetTrajectories cmdVelToTargetTrajectories(const vector_t& cmdVel, const Syst
     return target;
   }();
 
+  for(int i = 0; i < 6; i++){
+    std::cerr << "\n###   currentPose " << i << "="<< currentPose(i) << std::endl;
+  }
+  
+  std::cerr << "\n###   COM_HEIGHT : " << targetPose(2) << std::endl;
+
+
   // target reaching duration
   const scalar_t targetReachingTime = observation.time + timeToTarget;
   auto trajectories = targetPoseToTargetTrajectories(targetPose, observation, targetReachingTime);

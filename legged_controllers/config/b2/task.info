@@ -12,7 +12,7 @@ model_settings
 
   verboseCppAd                  true
   recompileLibrariesCppAd       false
-  modelFolderCppAd              /tmp/legged_control/a1
+  modelFolderCppAd              /tmp/legged_control/b2
 }
 
 swing_trajectory_config
@@ -160,18 +160,18 @@ initialState
    (11,0) 0.0     ; theta_base_x
 
    ;; Leg Joint Positions: [LF, LH, RF, RH] ;;
-   (0,0)   0.10   ; LF_HAA
-   (1,0)   0.83   ; LF_HFE
-   (2,0)  -1.59   ; LF_KFE
-   (3,0)   0.10   ; LH_HAA
-   (4,0)   0.83   ; LH_HFE
-   (5,0)  -1.59   ; LH_KFE
-   (6,0)  -0.10   ; RF_HAA
-   (7,0)   0.83   ; RF_HFE
-   (8,0)  -1.59   ; RF_KFE
-   (9,0)  -0.10   ; RH_HAA
-   (10,0)  0.83   ; RH_HFE
-   (11,0) -1.59   ; RH_KFE
+   (12,0)  0.09   ; LF_HAA
+   (13,0)  0.74   ; LF_HFE
+   (14,0) -1.38   ; LF_KFE
+   (15,0)  0.09   ; LH_HAA
+   (16,0)  0.74   ; LH_HFE
+   (17,0) -1.38   ; LH_KFE
+   (18,0) -0.09   ; RF_HAA
+   (19,0)  0.74   ; RF_HFE
+   (20,0) -1.38   ; RF_KFE
+   (21,0) -0.09   ; RH_HAA
+   (22,0)  0.74   ; RH_HFE
+   (23,0) -1.38   ; RH_KFE
 }
 
 ; standard state weight matrix
@@ -295,8 +295,8 @@ frictionConeTask
 
 swingLegTask
 {
-    kp                   350
-    kd                   37
+    kp                   10000
+    kd                   10
 }
 
 weight
